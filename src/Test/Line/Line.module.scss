@@ -1,0 +1,57 @@
+.line{
+    padding:10px 0;
+    display:flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.line__item{
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+    width:30px;
+    padding:5px 0;
+    border:2px black solid;
+    margin:5px 10px 5px 0;
+    &:hover{
+        background-color: rgb(141, 125, 125);
+    }
+    &__active{
+        background-color:rgb(102, 161, 102);
+        &:hover{
+            background-color: rgb(63, 134, 63);
+        }
+    }
+    &__completed{
+        background-color:rgb(124, 124, 139);
+        &:hover{
+            background-color: rgb(167, 167, 180);
+        }
+    }
+    &__completedactive{
+        box-shadow: 10px -3px 10px 0px rgba(95, 99, 95, 0.29);
+    }
+    &__red{
+        background-color:rgb(207, 32, 32);
+        &:hover{
+            background-color: rgb(156, 16, 11);
+        }
+    }
+    &__activered{
+        border:2px solid rgba(253, 216, 112,0.7);
+        box-shadow: 10px -3px 15px 0px rgba(231, 66, 40, 0.29);
+    }
+    &__green{
+        background-color:rgb(14, 168, 8);
+        &:hover{
+            background-color: rgb(28, 194, 111);
+        }
+    }
+    &__activegreen{
+        border:2px solid rgba(253, 216, 112,0.7);
+        box-shadow: 10px -3px 15px 0px rgba(20, 146, 29, 0.29);
+    }
+    &__border{
+        border:2px solid rgba(253, 216, 112,0.7);
+    }
+}

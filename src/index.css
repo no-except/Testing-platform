@@ -1,0 +1,8 @@
+body{
+  height:100%;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  background-color: rgb(241, 235, 235);
+  font-family: Century Gothic,sans-serif;
+}

@@ -1,0 +1,23 @@
+.header{
+    height:60px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(204, 197, 197);
+    img{
+        width:35px;
+        height:35px;
+        margin-left:20px;
+    }
+    &__text{
+        margin-left:40px; 
+    }
+    a{
+        text-decoration: none;
+        color:black;
+        &:hover{
+            color:rgb(226, 157, 8);
+            transition: 0.5s;
+        }
+    }
+}

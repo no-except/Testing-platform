@@ -1,0 +1,145 @@
+.questiontext{
+    padding-top:10px;
+    font-size:16px;
+    @media(max-width:600px){
+        font-size:14px;
+    }
+}
+.options{
+    padding-top:15px;
+}
+.option{
+    padding-top:5px;
+    display:flex;
+    &__text{
+        margin-top: 6px;
+        margin-left:5px;
+        @media(max-width:600px){
+            font-size:14px;
+        }
+    }
+    &__symbol{
+        font-weight: 700;
+        text-align: center;
+        border:2px solid black;
+        width:22px;
+        height:17px;
+        padding:5px 0px;
+        background-color: rgb(252, 244, 244);
+    }
+}
+.checkboxlist{
+    padding-top:15px;
+    &__text{
+        font-size:18px;
+    }
+}
+.checkboxes{
+    display:flex;
+}
+.checkbox{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    margin-right:4px;
+    &__input{
+        width:25px;
+        height:25px;
+        border:3px solid gray;
+    }
+    &__input__active{
+        border:3px solid black;
+        &:after{
+            content:'';
+            position: absolute;
+            top:15px;
+            left:14px;
+            width:2px;
+            height:37px;
+            transform: rotate(45deg);
+            background-color: black;
+        }
+        &:before{
+            content:'';
+            position: absolute;
+            top:15px;
+            left:14px;
+            width:2px;
+            height:37px;
+            transform: rotate(-45deg);
+            background-color: black;
+        }
+    }
+    &__input__green{
+        border:3px solid green;
+        &:after{
+            content:'';
+            position: absolute;
+            top:15px;
+            left:14px;
+            width:2px;
+            height:37px;
+            transform: rotate(45deg);
+            background-color: green;
+        }
+        &:before{
+            content:'';
+            position: absolute;
+            top:15px;
+            left:14px;
+            width:2px;
+            height:37px;
+            transform: rotate(-45deg);
+            background-color: green;
+        }
+    }
+    &__input__greenOK{
+        border:3px solid rgb(8, 189, 8);
+        &:after{
+            content:'';
+            position: absolute;
+            top:15px;
+            left:14px;
+            width:2px;
+            height:37px;
+            transform: rotate(45deg);
+            background-color: rgb(8, 189, 8);
+        }
+        &:before{
+            content:'';
+            position: absolute;
+            top:15px;
+            left:14px;
+            width:2px;
+            height:37px;
+            transform: rotate(-45deg);
+            background-color: rgb(8, 189, 8);
+        }
+    }
+    &__input__red{
+        border:3px solid red;
+        &:after{
+            content:'';
+            position: absolute;
+            top:15px;
+            left:14px;
+            width:2px;
+            height:37px;
+            transform: rotate(45deg);
+            background-color: red;
+        }
+        &:before{
+            content:'';
+            position: absolute;
+            top:15px;
+            left:14px;
+            width:2px;
+            height:37px;
+            transform: rotate(-45deg);
+            background-color: red;
+        }
+    }
+    &__symbol{
+        text-align: center;
+    }
+}
